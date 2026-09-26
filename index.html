@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burrinho Inteligente</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Burrinho Inteligente</h1>
+
+    <div class="bloco">
+        <button onclick="iniciar(true)">Modo Simulação</button>
+        <button onclick="iniciar(false)">Modo Jogador</button>
+        <p>Modo: <span id="modo">-</span></p>
+    </div>
+
+    <div class="bloco">
+        <h2>Placar</h2>
+        <p>Jogador 1: <span id="placar1">0</span></p>
+        <p>Jogador 2: <span id="placar2">0</span></p>
+    </div>
+
+    <div class="bloco">
+        <h2>Peça retirada</h2>
+        <p id="peca">-</p>
+    </div>
+
+    <div class="bloco" id="areaJogador" style="display: none;">
+        <label for="opcao">Digite 1 para início ou 2 para fim:</label><br>
+        <input type="text" id="opcao" size="5" onkeydown="if (event.key === 'Enter') jogarManual()">
+        <button id="jogar" onclick="jogarManual()">Jogar</button>
+    </div>
+
+    <div class="bloco">
+        <h2>Estado do jogo</h2>
+        <p>Vez do jogador: <span id="vez">-</span></p>
+        <p>Peças restantes: <span id="restantes">-</span></p>
+        <p>Última jogada: <span id="ultima">-</span></p>
+        <p>Tabuleiro: <span id="tabuleiro">-</span></p>
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
