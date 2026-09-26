@@ -10,7 +10,7 @@ Baixe os arquivos e abra o `index.html` no navegador. Não precisa instalar nada
 
 ```text
 index.html   -> página do jogo
-style.css    -> estilo básico da página
+estilo.css    -> estilo básico da página
 script.js    -> classes do jogo e lógica da página
 ```
 
